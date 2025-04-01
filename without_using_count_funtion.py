@@ -6,8 +6,8 @@ substring = input("Enter the substring to count: ")
 counter = 0
 
 #Check each part of the string
-for i in range(len(user_input) - len(substring) + 1):
-    if user_input[i:i + len(substring)] == substring:
+for part in range(len(user_input) - len(substring) + 1):
+    if user_input[part:part + len(substring)] == substring:
         counter += 1
 
 #Print result
